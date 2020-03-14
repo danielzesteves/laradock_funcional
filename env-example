@@ -39,7 +39,7 @@ COMPOSE_PROJECT_NAME=laradock
 
 # Select a PHP version of the Workspace and PHP-FPM containers (Does not apply to HHVM).
 # Accepted values: 7.4 - 7.3 - 7.2 - 7.1 - 7.0 - 5.6
-PHP_VERSION=7.3
+PHP_VERSION=7.2
 
 ### Phalcon Version ###########################################
 
@@ -143,7 +143,7 @@ WORKSPACE_INSTALL_SWOOLE=false
 WORKSPACE_INSTALL_TAINT=false
 WORKSPACE_INSTALL_LIBPNG=false
 WORKSPACE_INSTALL_IONCUBE=false
-WORKSPACE_INSTALL_MYSQL_CLIENT=false
+WORKSPACE_INSTALL_MYSQL_CLIENT=true
 WORKSPACE_INSTALL_PING=false
 WORKSPACE_INSTALL_SSHPASS=false
 WORKSPACE_INSTALL_INOTIFY=false
@@ -284,7 +284,7 @@ APACHE_DOCUMENT_ROOT=/var/www/
 
 ### MYSQL #################################################
 
-MYSQL_VERSION=latest
+MYSQL_VERSION=5.7
 MYSQL_DATABASE=default
 MYSQL_USER=default
 MYSQL_PASSWORD=secret
